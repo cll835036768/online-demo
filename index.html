@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>随机双色球</title>
+    <link rel="stylesheet" href="css/style.css">
     <!--手机端适配-->
     <style>
         html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
@@ -294,7 +295,6 @@ function reflash() {
         blueHtml = '<span>'+blueArray[0]+'</span>';
     }
 
-    document.getElementById("red").innerHTML=redHtml;
     document.getElementById("blue").innerHTML=blueHtml;
 
     console.log(redArray);

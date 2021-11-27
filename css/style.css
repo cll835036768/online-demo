@@ -1,0 +1,25 @@
+.main li{ 
+    -webkit-animation: twinkling 0.5s infinite ease-in-out 
+    } 
+    .animated{ 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both 
+    } 
+    @-webkit-keyframes twinkling{ 
+    0%{ 
+    opacity: 0.5; 
+    } 
+    100%{ 
+    opacity: 1; 
+    } 
+    } 
+    @keyframes twinkling{ 
+    0%{ 
+    opacity: 0.5; 
+    } 
+    100%{ 
+    opacity: 1; 
+    } 
+    }
