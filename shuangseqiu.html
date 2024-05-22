@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>随机双色球</title>
+    <link rel="stylesheet" href="css/style.css">
     <!--手机端适配-->
     <style>
         html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
@@ -216,16 +217,26 @@
             border-radius: 50%;
             display: inline-block;
         }
+
+        .main{
+            width: 100%;
+            margin: 1rem auto;
+            text-align: center;
+            font-size: .5rem;
+            
+        }
     </style>
 </head>
 <body>
 
-<div id="double">
-    <p class="title" onclick="reflash()">点击随机生成双色球</p>
-    <div id="red"></div>
-    <div id="blue"></div>
+<div class="main">
+    <ul>
+        <li > <a href="./shuangseqiu.html" style="background-color: #FF4B4B;color: #fff;">双色球项目</a></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li></ul>
 </div>
-
 
 <script>
 function reflash() {
@@ -284,7 +295,6 @@ function reflash() {
         blueHtml = '<span>'+blueArray[0]+'</span>';
     }
 
-    document.getElementById("red").innerHTML=redHtml;
     document.getElementById("blue").innerHTML=blueHtml;
 
     console.log(redArray);
